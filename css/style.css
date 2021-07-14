@@ -15,7 +15,7 @@ display: inline-block;
     margin-left: 20px;
 }
 hr{
-    background-image: url("/img/hr-img.png");
+    background-image: url("img/hr-img.png");
     height: 20px;
 }
 header h2{
@@ -68,7 +68,7 @@ main article p{
 }
 form {
    display:block;
-   background-image: url("/img/list-bg.png");
+   background-image: url("img/list-bg.png");
    background-size:cover;
    background-repeat:no-repeat;
  
@@ -163,7 +163,7 @@ footer p{
     text-align: center;
 }
 input[type="checkbox"] {
-    -webkit-appearance: none;
+    
     appearance: none;
   }
 input[type="checkbox"] {
@@ -176,6 +176,7 @@ input[type="checkbox"] {
     vertical-align: -2px;
     /* Set here so that Windows' High-Contrast Mode can override */
     color: gray;
+    
   }
   input[type="checkbox"]::before {
     content: "✔";
@@ -188,4 +189,3 @@ input[type="checkbox"] {
     /* Use `visibility` instead of `display` to avoid recalculating layout */
     visibility: visible;
   }
- 
