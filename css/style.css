@@ -1,9 +1,6 @@
 
 *{box-sizing: border-box;}
-body{
-    height: 3100px;
 
-}
 header div{
 position: relative;
 display: inline-block; 
@@ -81,7 +78,7 @@ main article *{
 form {
    display:block;
    position: relative;
-   background-image: url("../img/list-bg.png");
+   background-image: url("./../img/list-bg.png");
    background-size:cover;
    background-repeat:no-repeat;
    top: 90px;
@@ -90,22 +87,28 @@ form {
     
     position: relative;
     display: inline-block;
-    top: 60px;
+    top: 80px;
     left: 600px;
-    width: 420px;
+    width: 440px;
     height: 400px;
     font-family: 'Patrick Hand', cursive;
     font-size: 25px;
 
     
 }
-#sec label,input{
-    display:inline-block;
+
+#sec :nth-of-type(n+2){
     position: relative;
-    padding-top: 16px;
-   
+    top: 5px;
   
 }
+#sec :nth-of-type(n+5){
+    position: relative;
+    top: 12px;
+}
+
+
+
 
 #first {
     display: inline-block;
@@ -113,17 +116,25 @@ form {
     right: 130px;
     width: 300px;
     height: 350px;
-    top: 20px;
+  top: 58px;
     left: 80px;
     font-family: 'Patrick Hand', cursive;
     font-size: 25px;
    
 
 }
-
-#first label,input{
-    display:inline-block;
+#first :nth-of-type(n+4){
     position: relative;
+   top: 6px;
+ 
+  
+}
+#first :nth-of-type(n+6){
+    position: relative;
+    top: 12px;
+}
+ label,input{
+   
     padding-top: 16px;
   
 }
@@ -166,11 +177,14 @@ button{
 footer hr{
     background-image: none;
     height: 0px;
-
+ position: relative;
+    top: 180px;
     
 }
 footer div{
     position: relative;
+    top: 185px;
+   
 }
 footer img {
     position: absolute;
@@ -181,6 +195,8 @@ footer p{
     color: gray;
     font-size: 12px;
     text-align: center;
+      position: relative;
+    top: 185px;
 }
 input[type="checkbox"] {
     
