@@ -1,21 +1,24 @@
 
+*{box-sizing: border-box;}
 
 header div{
 position: relative;
 display: inline-block; 
-left: 72%;
-margin: 20px;
+left: 73.7%;
+
 }
+ header div :nth-of-type(n+6){
+    position: relative;
+    left: 20px;
+    }
+
 header article{
 position: relative;
 display: inline-block;
+}
 
-}
-#move {
-    margin-left: 20px;
-}
 hr{
-    background-image: url("img/hr-img.png");
+    background-image: url("../img/hr-img.png");
     height: 20px;
 }
 header h2{
@@ -32,66 +35,80 @@ header p{
 h1{ 
     font-size: 50px;
     font-family:monospace;
-    margin-left: 10px;
-    margin-top: 75px;
-    margin-bottom: -20px;
+    position: relative;
+    left: 10px;
+    top: 30px;
+
 }
  main div p {
     display: inline-block;
-    margin-right: 83%;
-    margin-left: 10px;
+    position: relative;
+    left: 10px;
+    top: 30px;
     font-size: 12px ;
-    color: gray;
-   
-    
+    color: gray;   
+}
+main div img {
+    position: relative;
+    top: 30px;
+    left: 85%;
 }
 main img{
     display: inline-block;
-    margin: 10px;
-    margin-top: 25px;
+    position: relative;
+    left:  10px;
+    top: 60px; ;
     
 }
-main article p{
-    
-    
-    margin-top: 20px ;
-    margin-left: 10px;
+main article *{
+    position: relative;
+    top: 80px ;
+    left: 15px;
     text-indent: 40px;
-    margin-bottom: 50px;
     width:100%;
-    
-     font-size: 18px;
-     display: flex;
-     justify-content:space-around;
-
-  
+    font-size: 18px;
+    justify-content:space-around;
+    padding: 30px;
+}
+#secondhr{
+   
+    position: relative;
+    top: 140px;
 }
 form {
    display:block;
-   background-image: url("img/list-bg.png");
+   position: relative;
+   background-image: url("./../img/list-bg.png");
    background-size:cover;
    background-repeat:no-repeat;
- 
-   margin: 20px;
+   top: 90px;
 }
 #sec {
     
     position: relative;
     display: inline-block;
-    top: 40px;
-    width: 420px;
+    top: 80px;
+    left: 600px;
+    width: 440px;
     height: 400px;
-    
     font-family: 'Patrick Hand', cursive;
     font-size: 25px;
+
     
 }
-#sec label,input{
-    display:inline-block;
+
+#sec :nth-of-type(n+2){
     position: relative;
-    padding-top: 16px;
+    top: 5px;
   
 }
+#sec :nth-of-type(n+5){
+    position: relative;
+    top: 12px;
+}
+
+
+
 
 #first {
     display: inline-block;
@@ -99,16 +116,25 @@ form {
     right: 130px;
     width: 300px;
     height: 350px;
-
-    margin-left: 200px;
+  top: 58px;
+    left: 80px;
     font-family: 'Patrick Hand', cursive;
     font-size: 25px;
+   
 
 }
-
-#first label,input{
-    display:inline-block;
+#first :nth-of-type(n+4){
     position: relative;
+   top: 6px;
+ 
+  
+}
+#first :nth-of-type(n+6){
+    position: relative;
+    top: 12px;
+}
+ label,input{
+   
     padding-top: 16px;
   
 }
@@ -119,26 +145,31 @@ form {
 h3{
 display: inline-block;
 position: relative;
- bottom: 8vh;
  font-weight: bold;
+ top: 100px;
+ left: 20px;
 }
-
+#vanpic{
+    display: inline-block;
+    position: relative;
+    top: 150px;   
+}
 #p{
     display: inline-block;
     position: relative;
-  bottom: 20px;
-  right: 128px;
+top: 150px;
+right: 110px;
   
 }
 button{
     display: inline-block;
     position: relative;
-    bottom: 44px;
+    top: 130px;
     left: 320px;
     color:white;
     background-color:tomato;
     width: 150px;
-height: 40px;
+    height: 40px;
 
 }
 
@@ -146,11 +177,14 @@ height: 40px;
 footer hr{
     background-image: none;
     height: 0px;
-
+ position: relative;
+    top: 180px;
     
 }
 footer div{
     position: relative;
+    top: 185px;
+   
 }
 footer img {
     position: absolute;
@@ -161,6 +195,8 @@ footer p{
     color: gray;
     font-size: 12px;
     text-align: center;
+      position: relative;
+    top: 185px;
 }
 input[type="checkbox"] {
     
